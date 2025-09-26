@@ -217,7 +217,7 @@ int get_touch_xy()
     return 0;
 }
 
-int pic_first()
+int pic_first()     //显示主界面图片
 {
     bmp_path_first[0]="/zhu.bmp";
     show_bmp_first(bmp_path_first[0]);
@@ -227,7 +227,7 @@ int pic_first()
     {
         get_touch_xy();
         
-        if(touch_x>=200 && touch_x<=350 && touch_y>=180 && touch_y<270)//相册位置
+        if(touch_x>=200 && touch_x<=350 && touch_y>=180 && touch_y<270)     //相册位置
         {
             printf("打开相册\n");
             system("mplayer -slave -input file=/my_fifo -zoom -x 800 -y 480 /zc2.avi &"); 
@@ -242,10 +242,10 @@ int pic_first()
             usleep(2500000);
             system("killall -SIGKILL mplayer");
             
-            video_show(); //显示视频界面背景图片
-            video_touch(); //触摸播放视频     
+            video_show();       //显示视频界面背景图片
+            video_touch();      //触摸播放视频     
         }
-        else if(touch_x>=470 && touch_x<580 && touch_y>170 && touch_y<270)//音乐位置
+        else if(touch_x>=470 && touch_x<580 && touch_y>170 && touch_y<270)  //音乐位置
         {
             printf("打开音乐\n");
             system("mplayer -slave -input file=/my_fifo -zoom -x 800 -y 480 /zc3.avi &"); 
@@ -253,13 +253,13 @@ int pic_first()
             system("killall -SIGKILL mplayer");
             music_chose();
         }
-        else if(touch_x>=470 && touch_x<580 && touch_y>=280 && touch_y<380)//游戏位置
+        else if(touch_x>=470 && touch_x<580 && touch_y>=280 && touch_y<380) //游戏位置
         {
             printf("打开游戏\n");
             system("mplayer -slave -input file=/my_fifo -zoom -x 800 -y 480 /zc1.avi &"); 
             usleep(2500000);
             system("killall -SIGKILL mplayer");
-            game_choose(); //游戏选择界面
+            game_choose();      //游戏选择界面
         }
     }
     return 0;

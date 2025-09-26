@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/chuny/Desktop/mywork/大三/three_1/粤嵌开发板课设/2+1(周巧巧，古欣颖，吕敏婷，罗春媛)",
-      "program": "c:/Users/chuny/Desktop/mywork/大三/three_1/粤嵌开发板课设/2+1(周巧巧，古欣颖，吕敏婷，罗春媛)/build/Debug/outDebug",
+      "cwd": "c:/Users/chuny/Desktop/mywork/大三/three_1/",
+      "program": "c:/Users/chuny/Desktop/mywork/大三/three_1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
